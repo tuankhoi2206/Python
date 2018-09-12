@@ -1,0 +1,3 @@
+[run]
+source = workspace_python
+omit = workspace_python/test*
