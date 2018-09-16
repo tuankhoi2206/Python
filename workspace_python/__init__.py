@@ -21,7 +21,12 @@ def main(global_config, **settings):
     config.add_route('exception', '/problem')
     # config.add_route('test', '/test')
 
+    config.add_view('views.home',
+                    name='hello',
+                    context='myproject.resources.Hello',
+                    renderer='json')
     config.set_session_factory(my_session_factory)
+    # The function named my_view is decorated with a view_config decorator
     config.scan()
     # WSGI Application Creation
     # WSGI is a protocol that allows servers to talk to Python applications.

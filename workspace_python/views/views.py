@@ -18,8 +18,6 @@ class TutorialViews:
 
     @view_config(route_name='home')
     def home(self):
-        log(self.request.params['firstname'])
-        log(self.request.params['lastname'])
         return {'name': 'Home View'}
 
     @view_config(route_name='hello')

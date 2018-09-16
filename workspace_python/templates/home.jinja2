@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Quick Tutorial: ${name}</title>
+    <title>Quick Tutorial: {{name}} ^^!</title>
 </head>
 <body>
-<h1>Hi ${name}</h1>
+    <form method="post" action="home">
+        <div>
+            <label>FirstName</label>
+            <input type="text" name="firstname"/>
+        </div>
+        <div>
+            <label>LastName</label>
+            <input type="text" name="lastname"/>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>

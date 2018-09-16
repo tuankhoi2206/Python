@@ -1,3 +1,10 @@
+#
+# Its mean to be used to define requirement for installing dependencies for your package
+# and testing, as well as distributing your application.
+#
+
+
+
 import os
 
 from setuptools import setup, find_packages
